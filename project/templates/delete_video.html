@@ -1,0 +1,15 @@
+<!-- delete_video.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Delete Video</title>
+</head>
+<body>
+    <h1>Delete Video</h1>
+    <p>Are you sure you want to delete "{{ video.title }}"?</p>
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit">Confirm</button>
+    </form>
+</body>
+</html>
